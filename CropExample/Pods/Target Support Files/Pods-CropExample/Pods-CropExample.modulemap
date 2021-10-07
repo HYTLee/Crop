@@ -1,0 +1,6 @@
+framework module Pods_CropExample {
+  umbrella header "Pods-CropExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
