@@ -69,7 +69,7 @@ class RKUserResizableView:UIView {
     /* Let's inset everything that's drawn (the handles and the content view)
      so that users can trigger a resize from a few pixels outside of
      what they actually see as the bounding box. */
-    let RKUserResizableViewGlobalInset:CGFloat = 5.0
+    let RKUserResizableViewGlobalInset:CGFloat = -6
     let RKUserResizableViewDefaultMinWidth:CGFloat = 48.0
     let RKUserResizableViewDefaultMinHeight:CGFloat = 48.0
     let RKUserResizableViewInteractiveBorderSize:CGFloat = 10.0
@@ -308,7 +308,7 @@ class RKUserResizableView:UIView {
             }
         }
         else {
-            translate(usingTouchLocation: (touches.first?.location(in: self))!)
+            //  translate(usingTouchLocation: (touches.first?.location(in: self))!)
         }
     }
     
